@@ -7,5 +7,8 @@ import matplotlib.pyplot as plt
 import statsmodels.api as sm
 from statsmodels.formula.api import logit
 
-df = pd.read_csv('C:\\Users\\dell\\OneDrive\\Documents\\prectice data.csv')
-
+import os
+if os.path.exists(r'C:\Users\dell\OneDrive\Documents\practice data\MLE.csv'):
+    print("File exists")
+else:
+    print("File not found")
